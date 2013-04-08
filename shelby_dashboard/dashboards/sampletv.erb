@@ -1,0 +1,49 @@
+<script type='text/javascript'>
+$(function() {
+
+Dashing.gridsterLayout('[{"col":2,"row":1},{"col":1,"row":1},{"col":4,"row":1},{"col":1,"row":2},{"col":3,"row":1},{"col":3,"row":3},{"col":4,"row":2},{"col":3,"row":2}]')
+  Dashing.widget_base_dimensions = [370, 340]
+  Dashing.numColumns = 5
+});
+</script>
+
+<% content_for(:title) { "Shelby.tv Dashbored" } %>
+
+<div class="gridster">
+  <ul>
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-view="Clock"></div>
+      <i class="icon-time icon-background"></i>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-view="Image" data-image="/logo.png"></div>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="rock" data-view="Meter" data-title="Amount of Rock" data-min="0" data-max="11"></div>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="2" data-sizey="2">
+      <div data-view="Iframe" data-url="http://shelby.tv/channels/adrenaline"></div>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="twitter_mentions" data-view="Comments" style="background-color:#428e3a;" data-moreinfo="Tweets about @Shelby"></div>
+      <i class="icon-twitter icon-background"></i>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
+      <div data-id="analytics_avgTimeOnSite" data-view="Number" data-title="Time on Site (min)" data-moreinfo="Trailing 7 Days" style="background-color:#ff9618"></div>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="analytics_visitors" data-view="Number" data-title="Visitors" data-moreinfo="Trailing 7 Days" style="background-color:#ff9618"></div>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="analytics_page_views" data-view="Number" data-title="Page Views" data-moreinfo="Trailing 7 Days" style="background-color:#ff9618"></div>
+    </li>
+
+  </ul>
+</div>
